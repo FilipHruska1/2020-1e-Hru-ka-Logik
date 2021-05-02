@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rocnikovka123.FXMLDocumentController">
+    <children>
+        <TextField fx:id="text2" alignment="CENTER" disable="true" focusTraversable="false" layoutX="183.0" layoutY="280.0" prefHeight="85.0" prefWidth="155.0" text="Nápověda" />
+        <TextField fx:id="text1" alignment="CENTER" focusTraversable="false" layoutX="181.0" layoutY="158.0" prefHeight="60.0" prefWidth="155.0" promptText="Zde zadejte text" />
+        <Button fx:id="b1" layoutX="177.0" layoutY="119.0" mnemonicParsing="false" onAction="#vyhodnotit" text="vyhodnotit" />
+        <Label fx:id="label" alignment="CENTER" layoutX="184.0" layoutY="238.0" prefHeight="25.0" prefWidth="149.0" text="Poslední tah" />
+        <Label fx:id="label2" alignment="CENTER" layoutX="223.0" layoutY="383.0" prefHeight="25.0" prefWidth="74.0" text="Pokusy" />
+        <Label fx:id="label3" alignment="CENTER" layoutX="156.0" layoutY="45.0" prefHeight="60.0" prefWidth="205.0" text="Logik">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Label>
+      <RadioButton fx:id="radio" layoutX="273.0" layoutY="123.0" mnemonicParsing="false" onAction="#radioAction" text="Pravidla" />
+      <TextField fx:id="text4" alignment="CENTER" focusTraversable="false" layoutX="177.0" layoutY="154.0" prefHeight="211.0" prefWidth="163.0" text="Výhra" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="text3" layoutX="142.0" layoutY="158.0" prefHeight="211.0" prefWidth="234.0" text="Cílem hry je správně odvodit čtyři čísla, která jsou random vygenerovaná programem, proto vždy do prvního textového pole piš jen čtyři čísla. Po zadání čísel se zobrazí nápověda o čtyřech znacích. Fajfka znamená, že jsi trefil správně číslo i pozici, # znamen, že tvoje číslo se nachází ve výsledku, ale na jiné pozici a X znamená, že jsi netrefil ani pozici ani číslo. Hodně štěstí" visible="false" wrapText="true" />
+    </children>
+</AnchorPane>
